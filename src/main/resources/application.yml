@@ -1,0 +1,33 @@
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: auction-backend
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/ptsoftware
+#    username: ptsoftware
+#    password:
+#    hikari:
+#      data-source-properties:
+#        stringtype: unspecified
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8080
