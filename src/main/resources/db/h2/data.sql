@@ -5,3 +5,6 @@ INSERT INTO `authorities` VALUES (NULL, 'happy', 'write');
 
 INSERT INTO `customer` (`email`, `pwd`, `role`)
 VALUES ('jan', '12345', 'admin');
+
+INSERT INTO `customer` (`email`, `pwd`, `role`)
+VALUES ('jan2', '$2y$12$oRRbkNfwuR8ug4MlzH5FOeui.//1mkd.RsOAJMbykTSupVy.x/vb2', 'admin');
