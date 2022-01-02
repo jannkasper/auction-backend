@@ -39,3 +39,14 @@ spring:
       password: 1234
 server:
   port: 8080
+
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          web:
+            FilterChainProxy: DEBUG
+jwt:
+  signing:
+    key: ymLTU8rq83j4fmJZj60wh4OrMNuntIj4fmJ
