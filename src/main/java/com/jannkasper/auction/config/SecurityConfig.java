@@ -49,6 +49,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers("/myCards").authenticated()
         .antMatchers("/notices").permitAll()
         .antMatchers("/contact").permitAll()
+        .antMatchers("/health").permitAll()
+        .antMatchers("/version").permitAll()
+        .antMatchers("/nations").permitAll()
+        .antMatchers("/currencies").permitAll()
         .antMatchers("/h2-console/*").permitAll()
         .and().formLogin().and().httpBasic();
 
