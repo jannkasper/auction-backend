@@ -75,7 +75,7 @@ jobs:
   #Deploy's job
   deploy:
     #Depends on build's job
-    needs: build
+    needs: sonar
     name: Deploy
     #Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
