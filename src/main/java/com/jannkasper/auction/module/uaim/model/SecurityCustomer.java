@@ -1,4 +1,4 @@
-package com.jannkasper.auction.model;
+package com.jannkasper.auction.module.uaim.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

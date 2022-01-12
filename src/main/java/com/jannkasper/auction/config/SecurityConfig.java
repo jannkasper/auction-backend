@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 import java.util.Collections;
 
-@Configuration
+//@Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
   @Override
@@ -43,6 +43,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .addFilterBefore(new JWTTokenValidatorFilter(), BasicAuthenticationFilter.class)
         .addFilterAfter(new JWTTokenGeneratorFilter(), BasicAuthenticationFilter.class)
         .authorizeRequests()
+        .antMatchers("/").authenticated()
         .antMatchers("/myAccount").authenticated()
         .antMatchers("/myLoans").authenticated()
         .antMatchers("/myBalance").authenticated()

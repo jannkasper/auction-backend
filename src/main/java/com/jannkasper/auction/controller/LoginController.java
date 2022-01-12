@@ -1,7 +1,7 @@
 package com.jannkasper.auction.controller;
 
-import com.jannkasper.auction.model.Customer;
-import com.jannkasper.auction.repository.CustomerRepository;
+import com.jannkasper.auction.module.uaim.model.Customer;
+import com.jannkasper.auction.module.uaim.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,7 +23,7 @@ public class LoginController {
 		}else {
 			return null;
 		}
-		
+
 	}
 
 }
