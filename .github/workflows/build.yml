@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
   #Trigger the workflow on push from the main branch
   push:
+  pull_request:
     branches:
       - main
 jobs:
