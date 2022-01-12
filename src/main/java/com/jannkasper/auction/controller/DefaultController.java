@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DefaultController {
 
+  @GetMapping()
+  public String getHome(String input) {
+    return "Here are the Home page";
+  }
+
   @GetMapping("/myAccount")
   public String getAccountDetails(String input) {
     return "Here are the account details from the DB";

@@ -1,7 +1,7 @@
 package com.jannkasper.auction.config;
 
-import com.jannkasper.auction.model.Customer;
-import com.jannkasper.auction.repository.CustomerRepository;
+import com.jannkasper.auction.module.uaim.model.Customer;
+import com.jannkasper.auction.module.uaim.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;

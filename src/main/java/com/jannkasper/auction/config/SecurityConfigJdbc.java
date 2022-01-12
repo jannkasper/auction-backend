@@ -14,7 +14,7 @@ import org.springframework.security.provisioning.JdbcUserDetailsManager;
 
 import javax.sql.DataSource;
 
-//@Configuration
+@Configuration
 public class SecurityConfigJdbc extends WebSecurityConfigurerAdapter {
 
   @Override
