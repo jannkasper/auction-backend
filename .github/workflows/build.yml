@@ -106,7 +106,7 @@ jobs:
           #Set artifact name
           name: artifact
           #From this path
-          path: target/data-0.0.1-SNAPSHOT.jar
+          path: target/auction-backend-0.0.1-SNAPSHOT.jar
   #Deploy's job
   deploy:
     #Depends on build's job
@@ -131,4 +131,4 @@ jobs:
           environment_name: Springbootdeploy-env
           version_label: ${{github.SHA}}
           region: eu-central-1
-          deployment_package: data-0.0.1-SNAPSHOT.jar
+          deployment_package: auction-backend-0.0.1-SNAPSHOT.jar
