@@ -31,19 +31,8 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       #Run Tests
-      - name: Build and Test
-        env:
-          GITHUB_EVENT_NAME: ${{ github.event_name }}
-        run: |
-          echo $GITHUB_EVENT_NAME
-          docker run --name postgres_test -d \
-            -e POSTGRES_USER=ptsoftware -e POSTGRES_PASSWORD=Password123 -e POSTGRES_DB=auction-backend \
-            -p 15432:5432 \
-            -v $(pwd)/docker:/docker-entrypoint-initdb.d \
-            postgres:11-alpine
-          mvn --version
-          mvn -B test
-          docker stop postgres_test
+      - name: Run Tests
+        run: mvn -B test
 
   #Sonar's Job
   sonar:
