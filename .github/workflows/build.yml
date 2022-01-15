@@ -37,7 +37,7 @@ jobs:
         run: |
           echo $GITHUB_EVENT_NAME
           docker run --name postgres_test -d \
-            -e POSTGRES_USER=ptsoftware -e POSTGRES_PASSWORD=Password123 -e POSTGRES_DB=ptsoftware \
+            -e POSTGRES_USER=ptsoftware -e POSTGRES_PASSWORD=Password123 -e POSTGRES_DB=auction-backend \
             -p 15432:5432 \
             -v $(pwd)/docker:/docker-entrypoint-initdb.d \
             postgres:11-alpine

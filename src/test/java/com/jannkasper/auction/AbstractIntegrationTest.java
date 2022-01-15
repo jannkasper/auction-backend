@@ -25,7 +25,6 @@ public abstract class AbstractIntegrationTest {
         .withDatabaseName("auction-backend")
         .withUsername("ptsoftware")
         .withPassword("Password123")
-        .withInitScript("init.sql")
         .withReuse(true);
     postgres.start();
   }
