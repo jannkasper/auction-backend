@@ -11,7 +11,6 @@ public class IntegrationTestPostgresqlContainer extends PostgreSQLContainer<Inte
     withDatabaseName("auction-backend");
     withUsername("ptsoftware");
     withPassword("Password123");
-    withInitScript("init.sql");
     withReuse(true);
 
   }
