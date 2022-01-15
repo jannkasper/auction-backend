@@ -1,5 +1,6 @@
-package com.jannkasper.auction.model;
+package com.jannkasper.auction.security.entity;
 
+import com.jannkasper.auction.user.entity.Customer;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

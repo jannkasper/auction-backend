@@ -1,7 +1,7 @@
-package com.jannkasper.auction.config;
+package com.jannkasper.auction.security.config;
 
-import com.jannkasper.auction.model.Customer;
-import com.jannkasper.auction.repository.CustomerRepository;
+import com.jannkasper.auction.user.entity.Customer;
+import com.jannkasper.auction.user.repository.CustomerJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -20,7 +20,7 @@ import java.util.List;
 public class SecurityUsernamePwdAuthenticationProvider implements AuthenticationProvider {
 
   @Autowired
-  private CustomerRepository customerRepository;
+  private CustomerJpaRepository customerRepository;
 
   @Autowired
   private PasswordEncoder passwordEncoder;

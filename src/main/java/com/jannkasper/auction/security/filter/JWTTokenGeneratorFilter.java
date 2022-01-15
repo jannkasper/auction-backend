@@ -1,6 +1,6 @@
-package com.jannkasper.auction.filter;
+package com.jannkasper.auction.security.filter;
 
-import com.jannkasper.auction.constants.SecurityConstants;
+import com.jannkasper.auction.security.constants.SecurityConstants;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.security.core.Authentication;

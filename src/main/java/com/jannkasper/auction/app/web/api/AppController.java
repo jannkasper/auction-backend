@@ -1,4 +1,4 @@
-package com.jannkasper.auction.controller;
+package com.jannkasper.auction.app.web.api;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Locale;
 
 @RestController
-public class DataController {
+public class AppController {
 
   @GetMapping("/")
   public String healthCheck() {

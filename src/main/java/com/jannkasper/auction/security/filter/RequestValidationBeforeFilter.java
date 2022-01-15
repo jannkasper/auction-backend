@@ -1,4 +1,4 @@
-package com.jannkasper.auction.filter;
+package com.jannkasper.auction.security.filter;
 
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.util.StringUtils;
