@@ -12,6 +12,7 @@ spring:
     hikari:
       data-source-properties:
         stringtype: unspecified
+    driver-class-name: org.postgresql.Driver
   data:
     jdbc:
       repositories:

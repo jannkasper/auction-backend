@@ -3,12 +3,14 @@ package com.jannkasper.auction.app.web.api;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
+import lombok.NoArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Locale;
 
 @RestController
+@NoArgsConstructor
 public class AppController {
 
   @GetMapping("/")

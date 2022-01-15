@@ -1,17 +1,13 @@
-package com.jannkasper.auction;
+package com.jannkasper.auction.app;
 
 import com.jannkasper.auction.app.web.api.AppController;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest
-class DataControllerTest {
+public class AppControllerTest {
 
-  @Autowired
-  AppController appController;
+  protected AppController appController = new AppController();
 
   @Test
   void health() {

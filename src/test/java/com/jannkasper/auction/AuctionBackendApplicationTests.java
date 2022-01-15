@@ -1,10 +1,8 @@
 package com.jannkasper.auction;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class AuctionBackendApplicationTests {
+class AuctionBackendApplicationTests extends AbstractIntegrationTest {
 
 	@Test
 	void contextLoads() {
