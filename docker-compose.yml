@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    command: sh -c "./mvnw spring-boot:run "
+    ports:
+      - 8000:8000
+      - 8080:8080
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/ptsoftware
+      SPRING_DATASOURCE_USERNAME: ptsoftware
+      SPRING_DATASOURCE_PASSWORD: Password123
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:11-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - todo-postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ptsoftware
+      POSTGRES_USER: ptsoftware
+      POSTGRES_PASSWORD: Password123
+
+volumes:
+  todo-postgres-data:

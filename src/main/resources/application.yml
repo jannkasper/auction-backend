@@ -35,7 +35,7 @@ spring:
     default-schema: flyway
     baseline-on-migrate: true
     user: ptsoftware
-    password:
+    password: Password123
     baseline-version: 0.0.0
     table: version_history_${spring.application.name}
     out-of-order: true
